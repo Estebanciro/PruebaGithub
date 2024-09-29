@@ -49,9 +49,105 @@
         </div>
     </div>
 
-    <div id="tutorial" style="margin-top: 50px;">
-        <h2>Como utilizar Git - Tutorial detallado</h2>
-        <p>Aquí puedes escribir el contenido de tu tutorial.</p>
+    <div id="blog" class="tutorial-section" style="margin-top: 50px;">
+        <h2>Cómo utilizar Git - Tutorial detallado</h2>
+        
+        <h3>Introducción</h3>
+        <p>
+            Git es una herramienta de control de versiones distribuido que facilita a los desarrolladores el seguimiento de las modificaciones en su código y la colaboración en proyectos compartidos. En este tutorial, veremos cómo iniciar un repositorio en tu equipo, manejar ramas y sincronizarlo con un repositorio remoto en GitHub.
+        </p>
+
+        <h3>1. Instalación y Configuración de Git</h3>
+        <h4>1.1 Descarga e Instalación</h4>
+        <p>
+            Para comenzar a usar Git en un proyecto, primero necesitas inicializar un repositorio local. Esto convierte cualquier carpeta en tu máquina en un repositorio Git.
+            <img src="img/Descarga-Instalacion.png" alt="Descarga-Git" class="tutorial-imagen">
+        </p>
+        
+        <h4>1.2 Configuración inicial</h4>
+        <p>
+            Después de la instalación, configura tu nombre de usuario y correo electrónico:
+        </p>
+        <pre><code>git config --global user.name "Tu Nombre"</code></pre>
+        <pre><code>git config --global user.email "tu@email.com"</code></pre>
+
+        <h3>2. Inicializacion del Repositorio localmente</h3>
+        <p>
+            Para comenzar a usar Git en tu proyecto: 
+            <ul>
+                <li>Abre la terminal en la carpeta del proyecto</li>
+                <li>Ejecuta el comando: <pre>git init</pre></li>
+                <li>Git creará un nuevo repositorio en esa carpeta.</li>
+            </ul>
+            <img src="img/git.init inicializacion.jpg" alt="inicializacion" class="tutorial-imagen">
+        </p>
+
+        <h4>2.1 Agregando Archivos al Staging Area</h4> 
+        <p>
+            Para preparar los cambios para el commit:
+            <img src="img/git add.  Agregar.png" alt="agregacion" class="tutorial-imagen">
+        </p>
+        <pre><code>git add .</code></pre>
+
+        <h4>2.2 Realizando el Primer Commit</h4>
+        <p>
+            Para guardar los cambios en el repositorio:
+            <img src="img/git commit - cambios.png" alt="cambios" class="tutorial-imagen">
+        </p>  
+        <pre><code>git commit -m "Mensaje descriptivo del commit"</code></pre>
+
+        <h3>3. Creación y Manejo de Branches</h3>
+        <p>
+            Las ramas en Git permiten trabajar en nuevas funcionalidades de forma aislada.
+        </p>
+        
+        <h4>3.1 Creando una Nueva Rama</h4>
+        <p>
+            <img src="img/git branch - nuevarama.png" alt="rama" class="tutorial-imagen">
+        </p>
+        <pre><code>git branch nombre-de-la-rama</code></pre>
+
+        <h4>3.2 Listando las Ramas</h4>
+        <p>
+            <img src="img/Lista ramas.png" alt="lista ramas" class="tutorial-imagen">
+        </p>
+        <pre><code>git branch</code></pre>
+
+        <h4>3.4 Fusionando Ramas (Merge)</h4>
+        <p>
+            Para incorporar los cambios de una rama a otra:
+            <img src="img/git checkout .png" alt="incorporarr rama a otra" class="tutorial-imagen">
+        </p>
+        <pre><code>git checkout rama-destino</code></pre>
+        <pre><code>git merge rama-origen</code></pre>
+
+        <h3>4. Conectando con un Repositorio Remoto (GitHub)</h3>
+        <h4>4.1 Creando un Nuevo Repositorio en GitHub</h4>
+        <p>
+            <img src="img/pruebaGithub.png" alt="Repositorio" class="tutorial-imagen">
+        </p>
+
+        <h4>4.2 Conectando el Repositorio Local con el Remoto</h4>
+        <p>
+            Copia la URL del repositorio remoto:
+            <img src="img/URL repositorio.png" alt="url repositorio" class="tutorial-imagen">
+            Conecta tu repositorio local con el remoto:
+        </p>
+        <pre><code>git remote add origin URL-del-repositorio</code></pre>
+
+
+        <h4>4.3 Subiendo Cambios al Repositorio Remoto</h4>
+        <p>
+            al ejecutar este comando, los cambios se subiran satisfactoriamente
+            <img src="img/git push origin main - cambios repos.png" alt="cambios repositorio" class="tutorial-imagen">
+        </p>
+        <pre><code>git push origin main</code></pre>
+
+        <h3>Repositorio remoto</h3>
+        <p>
+            el repositorio remoto deberia de verse de la siguiente forma
+            <img src="img/Vista repositorio remoto.png" alt="vista repositorio remoto" class="tutorial-imagen">
+        </p>
     </div>
 
 </body>

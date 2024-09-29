@@ -53,7 +53,6 @@ body {
     margin-top: 0;
 }
 
-
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -64,7 +63,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .navbar ul li {
@@ -82,9 +81,55 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #575757; 
+    background-color: #575757;
+}
+
+/* Estilos para la sección del tutorial */
+.tutorial-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.tutorial-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tutorial-section h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.tutorial-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tutorial-section pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.tutorial-section code {
+    font-family: Consolas, monospace;
+    font-size: 1em;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
 
-
-    
+.tutorial-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
