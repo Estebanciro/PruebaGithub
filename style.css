@@ -53,9 +53,9 @@ body {
     margin-top: 0;
 }
 
-/* Estilos para la barra de navegación */
+
 .navbar {
-    background-color: #333; /* Fondo oscuro */
+    background-color: #333;
     overflow: hidden;
 }
 
@@ -64,7 +64,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centrar los elementos */
+    justify-content: center; 
 }
 
 .navbar ul li {
@@ -82,7 +82,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #575757; /* Cambio de color al pasar el ratón */
+    background-color: #575757; 
 }
 
 
